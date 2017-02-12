@@ -1,2 +1,39 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,700|Raleway:700");
+@import url(../../node_modules/normalize.css);
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+header {
+  width: 100%;
+  height: 60px;
+  background-color: #E0E0E0; }
+
+nav {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  padding-top: 15px;
+  margin-right: 10px; }
+
+nav > ul {
+  display: inline-flex; }
+
+nav > ul > li {
+  display: inline;
+  list-style: none; }
+
+nav > ul > li > a {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #656464; }
+
+nav > ul > li > a:hover {
+  border-bottom: 3px solid #f7c53b; }
