@@ -1,4 +1,4 @@
-var cacheName = 'gdgsitePWA-step-1';
+var cacheName = 'gdgsitePWA-1';
 var filesToCache = [
   '/',
   './index.html',
