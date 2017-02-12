@@ -10,35 +10,44 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="Weather PWA">
     <link rel="apple-touch-icon" href="images/icons/icon-152x152.png">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
     <meta name="msapplication-TileImage" content="images/icons/icon-144x144.png">
     <meta name="msapplication-TileColor" content="#577ec0">
-    <!--<script src="src/js/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+    <script src="src/js/app.js"></script>
     <script src="src/js/services.js"></script>
-    <script src="src/js/controller-meetup.js"></script>-->
+    <script src="src/js/controller-meetup.js"></script>
+    <script src="src/js/controller-github.js"></script>
     <title>Google Developers Group Duque de Caxias</title>
     <link rel="stylesheet" href="./public/css/style.css">
     <link rel="manifest" href="/manifest.json">
-    <script src="public/js/bundle.js"></script>
     <script src="public/js/script.js"></script>
 </head>
 
 <body>
+  <header>
+    <h1 class="logo" title="Google Developers Group - Duque de Caxias"></h1>
+    <nav>
+      <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Meetup</a></li>
+          <li><a href="#">Projetos</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contatos</a></li>
+      </ul>
+    </nav>
+  </header>
     <section ng-controller="MeetupCtrl">
         <div class="" ng-repeat="event in events track by $index">
             <span>{{event.description}}</span>
             <a ng-href="{{event.event_url}}">{{event.event_url}}</a>
         </div>
     </section>
-    <header>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Sobre</a>
-            <a href="#">Projetos</a>
-            <a href="#">Contatos</a>
-        </nav>
-    </header>
-    <section></section>
+    <section ng-controller="GitHubCtrl">
+        <div class="" ng-repeat="repo in repos track by $index">
+          <a ng-href="{{repo.html_url}}">{{repo.name}}</a>
+        </div>
+    </section>
     <section></section>
     <section></section>
     <section></section>
