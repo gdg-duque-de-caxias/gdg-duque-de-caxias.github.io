@@ -1,11 +1,6 @@
-*{ box-sizing: border-box; margin:0; padding:0;}
 @import url('https://fonts.googleapis.com/css?family=Lato:300,700|Raleway:700');
-@import 'helpers/variables';
-@import 'helpers/mixins';
-@import 'base/base';
-@import '../../node_modules/normalize.css';
-@import 'layout/layout';
-@import 'module/menu';
-@import 'module/footer';
-@import 'theme/plain';
-
+@import 'helpers/_all.scss';
+@import 'base/_all.scss';
+@import 'layout/_all.scss';
+@import 'module/_all.scss';
+@import 'theme/_all.scss';

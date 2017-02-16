@@ -1,8 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700|Raleway:400,700");
-@import url(../../node_modules/normalize.css);
+@import url("https://fonts.googleapis.com/css?family=Lato:300,700|Raleway:700");
+@import url(../../../node_modules/normalize/normalize.css);
 
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -16,16 +17,29 @@
 }
 
 nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-end;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   padding-top: 15px;
   margin-right: 10px; 
   margin-left: 20px;   
 }
 
 nav > ul {
-  display: inline-flex; 
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 nav > ul > li {
