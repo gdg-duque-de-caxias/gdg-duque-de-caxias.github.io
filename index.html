@@ -11,6 +11,7 @@
     <script src="src/js/controller-meetup.js"></script>
     <script src="src/js/controller-github.js"></script>
     <title>Google Developers Group Duque de Caxias</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Raleway" rel="stylesheet">
     <link rel="stylesheet" href="./public/css/style.css">
     <script src="public/js/bundle.js"></script>
     <script src="public/js/script.js"></script>
@@ -44,7 +45,51 @@
     <section></section>
     <section></section>
     <section></section>
-    <footer></footer>
+    <footer class="footer">
+      <div class="contact-form">
+        <h2 class="subtitle"> CONTATO </h2>
+        <form action="#">
+          <p class="control">
+            <input type="text" class="input" id="name" placeholder="name">
+            <label for="name" class="label"> Nome </label>
+          </p>
+          <p class="control">
+            <input type="email" class="input" id="email" placeholder="name">
+            <label for="email" class="label"> Email </label>
+          </p>
+          <p class="control">
+            <textarea name="name" rows="8" cols="80" class="input" id="message"></textarea>
+            <label for="message" class="label"> Escreva sua mensagem </label>
+          </p>
+          <p class="control">
+            <button class="submit" type="submit"> SEND MESSAGE </button>
+          </p>
+        </form>
+      </div>
+    </footer>
+    <script type="text/javascript">
+    var inputs = document.getElementsByClassName('input')
+    Array.prototype.forEach.call(inputs, function (item) {
+      item.addEventListener('focus', function () {
+        if (item.value === '') {
+          var id = item.id
+          var selector = '.label[for="'+ id + '"]'
+          var label = document.querySelector(selector)
+          item.classList.toggle('has-focus')
+          label.classList.toggle('is-active')
+        }
+      })
+      item.addEventListener('blur', function () {
+        if (item.value === '') {
+          var id = item.id
+          var selector = '.label[for="'+ id + '"]'
+          var label = document.querySelector(selector)
+          item.classList.toggle('has-focus')
+          label.classList.toggle('is-active')
+        }
+      })
+    })
+    </script>
 </body>
 
 </html>
