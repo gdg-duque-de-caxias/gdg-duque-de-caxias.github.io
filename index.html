@@ -18,19 +18,31 @@
 </head>
 
 <body>
-  <header>
-    <h1 class="logo" title="Google Developers Group - Duque de Caxias"></h1>
-    <nav>
-      <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Sobre</a></li>
-          <li><a href="#">Meetup</a></li>
-          <li><a href="#">Projetos</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contatos</a></li>
-      </ul>
-    </nav>
+  <header>    
+    <div id="div-menu">
+      <a href=""><img id="img-logo" src="public/img/gdg-duquedecaxias-logo.png" alt="Google Developers Group - Duque de Caxias"></a>      
+      <nav>      
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Meetup</a></li>
+            <li><a href="#">Projetos</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contatos</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <img id="img-header" src="public/img/header.png" alt="Cidade de Duque de Caxias">
+
+    <div id="div-box">
+      <h1>HackSite</h1>
+      <h2><img src="public/img/local-icon.png"/> Universidade Unigranrio</h2>
+      <h3>Rua Professor José de Souza Herdy, 1660 - Jardim Vinte e Cinco de Agosto - Duque de Caxias - RJ, 25071-202</h3>
+      <h2><img src="public/img/calendar-icon.png"/> Sáb, 11 de fev, às 10:00</h2>
+    </div>
   </header>
+
     <section ng-controller="MeetupCtrl">
         <div class="" ng-repeat="event in events track by $index">
             <span>{{event.description}}</span>
