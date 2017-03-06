@@ -1,11 +1,24 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700|Raleway:400,700");
-@import url(../../node_modules/normalize.css);
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
+body {
+  font-size: 62.5%;
+  font-family: "Lato", sans-serif; }
+
+::-webkit-input-placeholder {
+  color: transparent; }
+
+:-moz-placeholder {
+  color: transparent; }
+
+::-moz-placeholder {
+  color: transparent; }
+
+:-ms-input-placeholder {
+  color: transparent; }
 
 #div-menu {
   width: 100%;
@@ -14,6 +27,64 @@
   border-bottom: 2px solid #c4c4c4;
   position: fixed;
 }
+
+.footer {
+  width: 100%;
+  background-color: #E0E0E0; }
+  .footer .contact-form {
+    padding: 1em 2em;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1; }
+  .footer .subtitle {
+    font-size: 2em;
+    margin-bottom: 1em; }
+  .footer .control {
+    position: relative;
+    margin: 2em 0;
+    font-size: 1.8em; }
+    .footer .control .label {
+      position: absolute;
+      top: 1em;
+      -webkit-transition: all .4s ease;
+      transition: all .4s ease; }
+      .footer .control .label.is-active {
+        top: -1em;
+        color: #577EC0;
+        font-size: .8em; }
+    .footer .control .input {
+      width: 100%;
+      padding: .6em 0em;
+      background-color: transparent;
+      border: none;
+      border-bottom: 2px solid #a19d9d;
+      outline: none;
+      -webkit-transition: all .4s ease-in;
+      transition: all .4s ease-in;
+      font-size: 1em; }
+      .footer .control .input.has-focus {
+        border-bottom: 2px solid #577EC0; }
+    .footer .control textarea.input {
+      font-family: inherit; }
+  .footer .submit {
+    display: block;
+    margin: 0 auto;
+    padding: 1em 1.2em;
+    background-color: #577EC0;
+    color: white;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border-radius: 2px;
+    font-weight: 300; }
+    .footer .submit:hover {
+      background-color: #3f5a88; }
+
+@media screen and (max-width: 480px) {
+  .footer {
+    display: block;
+    padding: 0em; } }
 
 nav {
   display: flex;

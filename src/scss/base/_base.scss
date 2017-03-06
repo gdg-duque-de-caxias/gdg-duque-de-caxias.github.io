@@ -1,1 +1,26 @@
-*{ box-sizing: border-box; margin:0; padding:0;}
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+body {
+  font-size: 62.5%;
+  font-family: $font-body;
+}
+
+::-webkit-input-placeholder {
+   color: transparent;
+}
+
+:-moz-placeholder {
+   color: transparent;
+}
+
+::-moz-placeholder {
+   color: transparent;
+}
+
+:-ms-input-placeholder {
+   color: transparent;
+}
