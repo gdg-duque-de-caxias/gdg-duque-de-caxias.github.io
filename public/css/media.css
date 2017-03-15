@@ -1,0 +1,109 @@
+/* BOX ---------------------------------------------- */
+
+@media screen and (min-width: 769px) {
+    #div-box{
+        width: 325px;
+        margin-top: -250px;
+        float: right;
+        margin-right: 50px;
+    }
+
+    #div-box h1 {
+        font-size: 50px;
+    }
+
+    #div-box h2 {
+        font-size: 20px;
+    }
+
+    #div-box h3 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    #div-box{
+        margin-top: -1%;
+    }
+
+    #div-box h1 {
+        font-size: 40px;
+    }
+
+    #div-box h2 {
+        font-size: 17px;
+    }
+
+    #div-box h3 {
+        font-size: 17px;
+    }
+}
+
+
+/* MENU --------------------------------------------- */
+
+@media screen and (max-width: 769px) {
+    .nav-right {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .nav-toggle {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .nav-menu > li {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .nav-menu {
+        background-color: #eeeeee;
+        box-shadow: 0 4px 7px rgba(10, 10, 10, 0.1);
+        left: 0;
+        display: none;
+        right: 0;
+        top: 100%;
+        position: absolute;
+    }
+
+    .nav-menu.is-active {
+        display: block;
+    }
+
+    .nav-menu > li {
+        padding: 13px 10px;
+    }
+
+    .nav-menu > li:hover {
+        background-color: #fff;
+        font-weight: bold;
+        border-left: 5px solid #f7c53b;
+    }
+
+    .nav-menu > li > a {
+        padding: 10px;
+        font-size: 15px;
+        text-decoration: none;
+        color: #656464;
+        text-transform: uppercase;
+        "Raleway", sans-serif;
+    }
+}
+
+
+/* FOOTER ------------------------------------------- */
+
+@media screen and (max-width: 480px) {
+  .footer {
+    display: block;
+    padding: 0em; } 
+}

@@ -3,105 +3,113 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
-    <meta name="theme-color" content="#577ec0">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
-    <script src="src/js/app.js"></script>
-    <script src="src/js/services.js"></script>
-    <script src="src/js/controller-meetup.js"></script>
-    <script src="src/js/controller-github.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />  
     <title>Google Developers Group Duque de Caxias</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato|Raleway" rel="stylesheet">
     <link rel="stylesheet" href="./public/css/style.css">
-    <script src="public/js/bundle.js"></script>
-    <script src="public/js/script.js"></script>
+    <link rel="stylesheet" href="./public/css/media.css">
 </head>
 
 <body>
-  <header>    
-    <div id="div-menu">
-      <a href=""><img id="img-logo" src="public/img/gdg-duquedecaxias-logo.png" alt="Google Developers Group - Duque de Caxias"></a>      
-      <nav>      
-        <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Meetup</a></li>
-            <li><a href="#">Projetos</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contatos</a></li>
-        </ul>
-      </nav>
-    </div>
+    <!-- HEADER -->
+    <header> 
 
-    <img id="img-header" src="public/img/header.png" alt="Cidade de Duque de Caxias">
+        <!-- MENU -->   
+        <div id="div-menu">
+            <a href=""><img id="img-logo" src="public/img/gdg-duquedecaxias-logo.png" alt="Google Developers Group - Duque de Caxias">    
+            <nav>      
+                <ul class="nav-right">
+                    <li><a href="">Home</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Meetup</a></li>
+                    <li><a href="#">Projetos</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contatos</a></li>
+                </ul>
+                <span class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+                <div class="nav-menu">
+                    <li><a href="">Home</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Meetup</a></li>
+                    <li><a href="#">Projetos</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contatos</a></li>
+                </div>
+            </nav>
+        </div>
 
-    <div id="div-box">
-      <h1>HackSite</h1>
-      <h2><img src="public/img/local-icon.png"/> Universidade Unigranrio</h2>
-      <h3>Rua Professor José de Souza Herdy, 1660 - Jardim Vinte e Cinco de Agosto - Duque de Caxias - RJ, 25071-202</h3>
-      <h2><img src="public/img/calendar-icon.png"/> Sáb, 11 de fev, às 10:00</h2>
-    </div>
-  </header>
+        <!-- IMAGEM -->
+        <img id="img-header" src="public/img/header.png" alt="Cidade de Duque de Caxias">
 
-    <section ng-controller="MeetupCtrl">
+        <!-- BOX-EVENTO -->
+        <div id="div-box">
+            <h1>HackSite</h1>
+            <h2><img src="public/img/local-icon.png"/> Universidade Unigranrio</h2>
+            <h3>Rua Professor José de Souza Herdy, 1660 - Jardim Vinte e Cinco de Agosto - Duque de Caxias - RJ, 25071-202</h3>
+            <h2><img src="public/img/calendar-icon.png"/> Sáb, 11 de fev, às 10:00</h2>
+        </div>
+    </header>
+
+    <!-- SECTION: SOBRE -->
+    <section></section>
+
+    <!-- SECTION: DIVISÃO -->
+    <section></section>
+
+    <!-- SECTION: MEETUP-->
+    <!--<section ng-controller="MeetupCtrl">
         <div class="" ng-repeat="event in events track by $index">
             <span>{{event.description}}</span>
             <a ng-href="{{event.event_url}}">{{event.event_url}}</a>
         </div>
-    </section>
-    <section ng-controller="GitHubCtrl">
-        <div class="" ng-repeat="repo in repos track by $index">
-          <a ng-href="{{repo.html_url}}">{{repo.name}}</a>
-        </div>
-    </section>
-    <section></section>
-    <section></section>
-    <section></section>
-    <footer class="footer">
-      <div class="contact-form">
-        <h2 class="subtitle"> CONTATO </h2>
-        <form action="#">
-          <p class="control">
-            <input type="text" class="input" id="name" placeholder="name">
-            <label for="name" class="label"> Nome </label>
-          </p>
-          <p class="control">
-            <input type="email" class="input" id="email" placeholder="name">
-            <label for="email" class="label"> Email </label>
-          </p>
-          <p class="control">
-            <textarea name="name" rows="8" cols="80" class="input" id="message"></textarea>
-            <label for="message" class="label"> Escreva sua mensagem </label>
-          </p>
-          <p class="control">
-            <button class="submit" type="submit"> SEND MESSAGE </button>
-          </p>
-        </form>
-      </div>
-    </footer>
-    <script type="text/javascript">
-    var inputs = document.getElementsByClassName('input')
-    Array.prototype.forEach.call(inputs, function (item) {
-      item.addEventListener('focus', function () {
-        if (item.value === '') {
-          var id = item.id
-          var selector = '.label[for="'+ id + '"]'
-          var label = document.querySelector(selector)
-          item.classList.toggle('has-focus')
-          label.classList.toggle('is-active')
-        }
-      })
-      item.addEventListener('blur', function () {
-        if (item.value === '') {
-          var id = item.id
-          var selector = '.label[for="'+ id + '"]'
-          var label = document.querySelector(selector)
-          item.classList.toggle('has-focus')
-          label.classList.toggle('is-active')
-        }
-      })
-    })
-    </script>
-</body>
+    </section>-->
 
+    <!-- SECTION: PROJETOS -->
+    <!--<section ng-controller="GitHubCtrl">
+        <div class="" ng-repeat="repo in repos track by $index">
+            <a ng-href="{{repo.html_url}}">{{repo.name}}</a>
+        </div>
+    </section>-->
+    
+    <!-- SECTION: BLOG -->
+    <section></section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="contact-form">
+
+            <!-- FORM -->
+            <h2 class="subtitle">CONTATO</h2>
+            <form action="#">
+                <p class="control">
+                    <input type="text" class="input" id="name" placeholder="Nome">
+                </p>
+                <p class="control">
+                    <input type="email" class="input" id="email" placeholder="E-mail">
+                </p>
+                <p class="control">
+                    <textarea name="message" rows="8" cols="80" class="input" id="message" placeholder="Escreva sua mensagem"></textarea>
+                </p>
+                <p class="control">
+                    <button class="submit" type="submit">SEND MESSAGE</button>
+                </p>
+            </form>
+
+        </div>
+    </footer>
+
+    <!-- SCRIPT -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="src/js/app.js"></script>
+    <script src="src/js/services.js"></script>
+    <script src="src/js/controller-meetup.js"></script>
+    <script src="src/js/controller-github.js"></script>
+    <script src="public/js/bundle.js"></script>
+    <script src="public/js/script.js"></script>
+    <script src="public/js/menu.js"></script>
+</body>
 </html>
