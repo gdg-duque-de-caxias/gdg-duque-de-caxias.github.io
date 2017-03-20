@@ -1,6 +1,6 @@
 /* BOX ---------------------------------------------- */
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 999px) {
     #div-box{
         width: 325px;
         margin-top: -250px;
@@ -21,7 +21,7 @@
     }
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 999px) {
     #div-box{
         margin-top: -1%;
     }
@@ -42,19 +42,19 @@
 
 /* MENU --------------------------------------------- */
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 999px) {
     .nav-right {
         display: none;
     }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 999px) {
     .nav-toggle {
         display: none;
     }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 999px) {
     .nav-menu {
         display: none;
     }
@@ -64,7 +64,7 @@
     }
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 999px) {
     .nav-menu {
         background-color: #eeeeee;
         box-shadow: 0 4px 7px rgba(10, 10, 10, 0.1);
@@ -102,8 +102,15 @@
 
 /* FOOTER ------------------------------------------- */
 
-@media screen and (max-width: 480px) {
-  .footer {
-    display: block;
-    padding: 0em; } 
+@media screen and (max-width: 999px) {
+    .footer {
+        display: block;
+        padding: 0em;
+    } 
+
+    .footer .contact-form, .footer .social-media {
+        text-align: center;
+        padding: 50px;
+        width: 100%;
+    } 
 }

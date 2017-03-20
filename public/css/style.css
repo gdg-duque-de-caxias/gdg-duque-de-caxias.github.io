@@ -5,7 +5,6 @@
 }
 
 body {
-    font-size: 62.5%;
     font-family: "Lato", sans-serif; 
 }
 
@@ -171,40 +170,44 @@ nav > ul > li > a:hover {
 /* FOOTER ------------------------------------------- */
 
 .footer {
-  width: 100%;
-  background-color: #E0E0E0;
+    background: #dfdfdf;
+    overflow:auto;
+    padding: 70px;
+    width: 100%;
 }
 
-.footer .contact-form {
-    padding: 1em 2em;
-    -webkit-box-flex: 1;
-    -webkit-flex-grow: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1; 
+.footer .contact-form, .footer .social-media {
+    float: left;
+    padding: 0px 30px;
+    width: 50%;
 }
 
 .footer .subtitle {
-    font-size: 2em;
-    margin-bottom: 1em; 
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.footer.border {
+    border-top: 5px solid transparent;
+    border-image: linear-gradient(to right, #577ec0 0%, #da473b 33%, #f7c53b 66%, #0f9c56 100%);
+    border-image-slice: 1;
 }
 
 .footer .control {
     position: relative;
-    margin: 2em 0;
-    font-size: 1.8em; 
+    margin: 10px 0px;    
 }
 
 .footer .control .label {
-  position: absolute;
-  top: 1em;
-  -webkit-transition: all .4s ease;
+  position: inherit;
+  font-size: 13px;
+  top: -25px;;
   transition: all .4s ease; 
 }
 
 .footer .control .label.is-active {
-    top: -1em;
+    top: 0em;
     color: #577EC0;
-    font-size: .8em; 
 }
 
 .footer .control .input {
@@ -212,15 +215,15 @@ nav > ul > li > a:hover {
   padding: .6em 0em;
   background-color: transparent;
   border: none;
-  border-bottom: 2px solid #a19d9d;
+  border-bottom: 2px solid #afafaf;
   outline: none;
   -webkit-transition: all .4s ease-in;
-  transition: all .4s ease-in;
-  font-size: 1em; 
+  transition: all .4s ease-in; 
+  font-size: 13px;
 }
 
 .footer .control .input.has-focus {
-    border-bottom: 2px solid #577EC0; 
+    border-bottom: 2px solid #577ec0; 
 }
 
 .footer .control textarea.input {
@@ -247,17 +250,17 @@ nav > ul > li > a:hover {
 
 /* PLACEHOLDER -------------------------------------- */
 ::-webkit-input-placeholder {
-    // Alterar placeholder futuramente
+    color: transparent;
 }
 
 :-moz-placeholder {
-    // Alterar placeholder futuramente
+    color: transparent;
 }
 
 ::-moz-placeholder {
-    // Alterar placeholder futuramente
+    color: transparent;
 }
 
 :-ms-input-placeholder {
-    // Alterar placeholder futuramente
+    color: transparent;
 }
