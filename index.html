@@ -78,27 +78,43 @@
     <section></section>
 
     <!-- FOOTER -->
-    <footer class="footer">
-        <div class="contact-form">
-
-            <!-- FORM -->
+    <footer class="footer border">
+        
+        <!-- FORM -->
+        <div class="contact-form">            
             <h2 class="subtitle">CONTATO</h2>
             <form action="#">
                 <p class="control">
                     <input type="text" class="input" id="name" placeholder="Nome">
+                    <label for="name" class="label"> Nome </label>
                 </p>
                 <p class="control">
                     <input type="email" class="input" id="email" placeholder="E-mail">
+                    <label for="email" class="label"> E-mail </label>
                 </p>
                 <p class="control">
-                    <textarea name="message" rows="8" cols="80" class="input" id="message" placeholder="Escreva sua mensagem"></textarea>
+                    <textarea name="message" rows="5" cols="80" class="input" id="message" placeholder="Escreva sua mensagem"></textarea>
+                    <label for="message" class="label"> Mensagem </label>
                 </p>
                 <p class="control">
                     <button class="submit" type="submit">SEND MESSAGE</button>
                 </p>
             </form>
-
         </div>
+
+        <!-- SOCIAL MEDIA -->
+        <div class="social-media">            
+            <h2 class="subtitle">REDES SOCIAIS</h2>               
+            <div class="logo-social">
+                <a href="https://plus.google.com/114684774037479279638"><img src="public/img/google-plus.png"/></a> 
+                <a href="https://twitter.com/gdgcaxias"><img src="public/img/twitter.png"/></a>  
+                <a href="https://www.facebook.com/gdgduquedecaxias/"><img src="public/img/facebook.png"/></a>  
+                <a href="https://www.meetup.com/pt-BR/GDGDuquedeCaxias/"><img src="public/img/meetup-logo.png"/></a>  
+                <a href="https://github.com/GDGDuqueDeCaxias"><img src="public/img/github.png"/></a>
+                <a href="https://www.youtube.com/channel/UCUIXzAxIpTVoJWSitGy3C3g"><img src="public/img/youtube.png"/></a>
+            </div> 
+        </div>
+
     </footer>
 
     <!-- SCRIPT -->
@@ -110,6 +126,6 @@
     <script src="src/js/controller-github.js"></script>
     <script src="public/js/bundle.js"></script>
     <script src="public/js/script.js"></script>
-    <script src="public/js/menu.js"></script>
+    <script src="public/js/menu.js"></script>   
 </body>
 </html>
