@@ -139,10 +139,9 @@ nav > ul > li > a:hover {
     margin-top: 52px;
 }
 
+/* HEADER BOX --------------------------------------- */
 
-/* BOX ---------------------------------------------- */
-
-#div-box {
+#header-box {
     padding: 20px;
     text-align: center;
     background: #da473b;
@@ -150,67 +149,131 @@ nav > ul > li > a:hover {
     position: relative;
 }
 
-#div-box h1 {
+#header-box h1 {
     font-weight: bold;
     font-family: "Raleway", sans-serif;
 }
 
-#div-box h2 {
+#header-box h2 {
     font-weight: bold;
-    font-family: "Lato", sans-serif;
     line-height: 35px;
 }
 
-#div-box h3 {
+#header-box h3 {
     font-weight: 300;
-    font-family: "Lato", sans-serif;
 }
 
 
+/* SOBRE -------------------------------------------- */
+
+#sobre {
+    padding: 14% 12%;
+}
+
+#sobre h2 {
+    color: #656464;
+    font-weight: 300;
+    font-size: 30px;
+    text-align: center;
+}
+
+#sobre span {
+    font-weight: 600;
+}
+
+#sobre .gblue {
+    color: #577ec0;
+}
+
+#sobre .gred {
+    color: #da473b;
+}
+
+#sobre .gyellow {
+    color: #dcad2c;
+}
+
+#sobre .ggreen {
+    color: #0f9c56;
+}
+
+#sobre em {
+    color: #da473b;
+    font-style: normal;
+}
+
+#sobre strong {
+    color: #555555;
+    font-weight: 400;
+}
+
+/* SOBRE BOX ---------------------------------------- */
+
+#sobre-box {
+    margin: 8% -2% 0% -2%;
+    display: flex;
+}
+
+#sobre-box .sobre-box {
+    padding: 0% 2%;;
+    width: 33%;
+    text-align: center;
+}
+
+#sobre-box h3 {
+    margin: 10px 0px 5px 0px;
+    font-size: 17px;
+}
+
+#sobre-box p {
+    color: #656464;
+    font-size: 13px;
+}
+
 /* FOOTER ------------------------------------------- */
 
-.footer {
+#footer {
     background: #dfdfdf;
     overflow:auto;
     padding: 70px;
     width: 100%;
 }
 
-.footer .contact-form, .footer .social-media {
+#footer .contact-form, #footer .social-media {
     float: left;
     padding: 0px 30px;
     width: 50%;
 }
 
-.footer .subtitle {
+#footer .subtitle {
     font-size: 25px;
     margin-bottom: 20px;
 }
 
-.footer.border {
+#footer.border {
     border-top: 5px solid transparent;
     border-image: linear-gradient(to right, #577ec0 0%, #da473b 33%, #f7c53b 66%, #0f9c56 100%);
     border-image-slice: 1;
 }
 
-.footer .control {
+#footer .control {
     position: relative;
     margin: 10px 0px;    
 }
 
-.footer .control .label {
+#footer .control .label {
   position: inherit;
   font-size: 13px;
   top: -25px;;
   transition: all .4s ease; 
 }
 
-.footer .control .label.is-active {
+#footer .control .label.is-active {
     top: 0em;
     color: #577EC0;
 }
 
-.footer .control .input {
+#footer .control .input {
   width: 100%;
   padding: .6em 0em;
   background-color: transparent;
@@ -222,15 +285,15 @@ nav > ul > li > a:hover {
   font-size: 13px;
 }
 
-.footer .control .input.has-focus {
+#footer .control .input.has-focus {
     border-bottom: 2px solid #577ec0; 
 }
 
-.footer .control textarea.input {
+#footer .control textarea.input {
   font-family: inherit; 
 }
 
-.footer .submit {
+#footer .submit {
     display: block;
     margin: 0 auto;
     padding: 1em 1.2em;
@@ -243,12 +306,13 @@ nav > ul > li > a:hover {
     font-weight: 300; 
 }
 
-.footer .submit:hover {
+#footer .submit:hover {
   background-color: #3f5a88; 
 }
 
 
 /* PLACEHOLDER -------------------------------------- */
+
 ::-webkit-input-placeholder {
     color: transparent;
 }
