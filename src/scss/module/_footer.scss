@@ -1,0 +1,75 @@
+.footer {
+  width: 100%;
+  background-color: $gray;
+
+  .contact-form {
+    padding: 1em 2em;
+    flex-grow: 1;
+  }
+
+  .subtitle {
+    font-size: 2em;
+    margin-bottom: 1em;
+  }
+
+  .control {
+    position: relative;
+    margin: 2em 0;
+    font-size: 1.8em;
+
+    .label {
+      position: absolute;
+      top: 1em;
+      transition: all .4s ease;
+
+      &.is-active {
+        top: -1em;
+        color: $blue;
+        font-size: .8em;
+      }
+    }
+
+    .input {
+      width: 100%;
+      padding: .6em 0em;
+      background-color: transparent;
+      border: none;
+      border-bottom: 2px solid $gray-darker;
+      outline: none;
+      transition: all .4s ease-in;
+      font-size: 1em;
+
+        &.has-focus {
+          border-bottom: 2px solid $blue;
+        }
+    }
+
+    textarea.input {
+      font-family: inherit;
+    }
+  }
+
+  .submit {
+    display: block;
+    margin: 0 auto;
+    padding: 1em 1.2em;
+    background-color: $blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border-radius: 2px;
+    font-weight: 300;
+
+      &:hover {
+        background-color: $blue-darker;
+      }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer {
+    display: block;
+    padding: 0em;
+  }
+}

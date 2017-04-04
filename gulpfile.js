@@ -2,6 +2,8 @@
 
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var postcss = require('gulp-postcss');
+var autoprefixer = require('autoprefixer')
 var imagemin = require('gulp-imagemin');
 
 gulp.task('default', ['sass:watch',  'minimg'])
@@ -9,6 +11,9 @@ gulp.task('default', ['sass:watch',  'minimg'])
 gulp.task('sass', function () {
   return gulp.src('./src/scss/**/*.scss')
     .pipe(sass().on('error', sass.logError))
+    .pipe(postcss([autoprefixer({
+      browsers: ['last 9 versions']
+    })]))
     .pipe(gulp.dest('./public/css'));
 });
 
