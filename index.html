@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
     <title>Google Developers Group Duque de Caxias</title>
     <link rel="stylesheet" href="./public/css/style.css">
-    <link rel="stylesheet" href="./public/css/media.css">
 </head>
 
 <body>
@@ -14,8 +13,8 @@
     <header>
 
         <!-- MENU -->
-        <div id="div-menu">
-            <a href=""><img id="img-logo" src="public/img/gdg-duquedecaxias-logo.png" alt="Google Developers Group - Duque de Caxias">
+        <div class="menu">
+            <a href=""><img class="img-logo" src="public/img/gdg-duquedecaxias-logo.png" alt="Google Developers Group - Duque de Caxias">
             <nav>
                 <ul class="nav-right">
                     <li><a href="#">Home</a></li>
@@ -42,10 +41,10 @@
         </div>
 
         <!-- IMAGEM -->
-        <img id="img-header" src="public/img/header.png" alt="Cidade de Duque de Caxias">
+        <img class="img-header" src="public/img/header.png" alt="Cidade de Duque de Caxias">
 
         <!-- BOX-EVENTO -->
-        <div id="header-box">
+        <div class="header-box">
             <h1>HackSite</h1>
             <h2><img src="public/img/local-icon.png"/> Universidade Unigranrio</h2>
             <h3>Rua Professor José de Souza Herdy, 1660 - Jardim Vinte e Cinco de Agosto - Duque de Caxias - RJ, 25071-202</h3>
@@ -54,22 +53,22 @@
     </header>
 
     <!-- SECTION: SOBRE -->
-    <section id="sobre">
+    <section class="sobre">
         <h2>
             O <span class="gblue">G</span><span class="gred">o</span><span class="gyellow">o</span><span class="gblue">g</span><span class="ggreen">l</span><span class="gred">e</span> <strong>Developers Group Duque de Caxias</strong> é um grupo aberto para desenvolvedores entusiastas. Nosso objetivo é pesquisar e disseminar conhecimento a respeito de tecnologias modernas e principalmente de tecnologias Google como <em>Android</em>, <em>HTML5</em>, <em>AngularJS</em>, <em>APIs</em> e outros.
         </h2>
-        <div id="sobre-box">
-            <div class="sobre-box">
+        <div class="sobre-box">
+            <div class="box">
                 <img src="public/img/video-chat.png" alt="">
                 <h3>Aproximando Pessoas</h3>
                 <p>As pessoas acabam se interagindo conforme os eventos ocorrem de uma forma que isso cria um networking entre elas e como consequência, agrega conhecimento para ela.</p>
             </div>
-            <div class="sobre-box">
+            <div class="box">
                 <img src="public/img/lecture.png" alt="">
                 <h3>Oportunidades</h3>
                 <p>O GDG Duque de Caxias reúne pessoas que tenham um mesmo interesse, sejam desenvolvedores(as), programadores(as), designers, publicitários(as). Todos num mesmo objeto: inovar.</p>
             </div>
-            <div class="sobre-box">
+            <div class="box">
                 <img src="public/img/ereader.png" alt="">
                 <h3>Tecnologias</h3>
                 <p>Nós focamos no aprendizado de tecnologias Google e tecnologias novas e mais faladas no mercado.</p>
@@ -77,10 +76,10 @@
         </div>
     </section>
 
-    <!-- SECTION: DIVISÃO -->
+    <!-- SECTION: DIVISÃO
     <section class="group-images border">
-      
-    </section>
+      <img src="./public/img/group-image.jpeg" alt="">
+    </section>-->
 
     <!-- SECTION: MEETUP-->
     <!--<section ng-controller="MeetupCtrl">
@@ -101,7 +100,7 @@
     <section></section>
 
     <!-- FOOTER -->
-    <footer id="footer" class="border">
+    <footer id="footer" class="footer border">
         <!-- FORM -->
         <div class="contact-form">
             <h2 class="subtitle">CONTATO</h2>
@@ -146,8 +145,15 @@
     <script src="src/js/services.js"></script>
     <script src="src/js/controller-meetup.js"></script>
     <script src="src/js/controller-github.js"></script>
-    <script src="public/js/bundle.js"></script>
+    <!--<script src="public/js/bundle.js"></script>-->
     <script src="public/js/script.js"></script>
     <script src="public/js/menu.js"></script>
+    <script>
+      /*if ('serviceWorker' in navigator) {
+         navigator.serviceWorker
+                  .register('./../sw.js')
+                  .then(function() { console.log('ServiceWorker Registrado')});
+       }*/
+    </script>
 </body>
 </html>

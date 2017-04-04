@@ -1,8 +1,3 @@
-/*if ('serviceWorker' in navigator) {
-   navigator.serviceWorker
-            .register('./../sw.js')
-            .then(function() { });
- }*/
 
  var inputs = document.getElementsByClassName('input')
     Array.prototype.forEach.call(inputs, function (item) {
