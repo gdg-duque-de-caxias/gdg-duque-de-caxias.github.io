@@ -6,7 +6,7 @@ var postcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer')
 var imagemin = require('gulp-imagemin');
 
-gulp.task('default', ['sass:watch',  'minimg:watch'])
+gulp.task('default', ['sass:watch', 'minimg'])
 
 gulp.task('sass', function () {
   return gulp.src('./src/scss/**/*.scss')

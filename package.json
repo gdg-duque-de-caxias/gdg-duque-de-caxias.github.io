@@ -4,7 +4,10 @@
   "description": "Google Developers Group Duque de Caxias - Web Site",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --progress --colors",
+    "compile-js": "webpack",
+    "compile-assets": "gulp",
+    "livereload": "webpack-dev-server --progress --colors",
+    "dev": "concurrently --kill-others \"npm run livereload\" \"npm run compile-assets\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -27,6 +30,7 @@
   "devDependencies": {
     "autoprefixer": "^6.7.3",
     "babel": "^6.5.2",
+    "concurrently": "^3.4.0",
     "gulp": "^3.9.1",
     "gulp-imagemin": "^3.1.1",
     "gulp-postcss": "^6.3.0",
