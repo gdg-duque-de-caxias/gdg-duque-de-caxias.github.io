@@ -207,6 +207,51 @@ nav > ul > li > a:hover {
     color: #656464;
     font-size: 13px; }
 
+.gallery {
+  display: block;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  width: 100%; }
+
+.gallery__controls {
+  display: block;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  width: 100%; }
+  .gallery__controls .control__left {
+    left: 10%;
+    position: absolute; }
+  .gallery__controls .control__right {
+    position: absolute;
+    right: 10%; }
+
+.gallery__images {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  height: inherit;
+  width: auto; }
+
+.gallery__image {
+  height: 100%;
+  width: auto; }
+
+.gallery__skin {
+  position: absolute;
+  height: 300px;
+  width: 99vw; }
+
+.gallery::-webkit-scrollbar {
+  display: none; }
+
 .footer {
   overflow: auto;
   padding: 70px;
