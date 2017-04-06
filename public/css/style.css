@@ -222,10 +222,12 @@ nav > ul > li > a:hover {
   width: 100%; }
   .gallery__controls .control__left {
     left: 10%;
-    position: absolute; }
+    position: absolute;
+    z-index: 9999; }
   .gallery__controls .control__right {
     position: absolute;
-    right: 10%; }
+    right: 10%;
+    z-index: 9999; }
 
 .gallery__images {
   display: -webkit-box;

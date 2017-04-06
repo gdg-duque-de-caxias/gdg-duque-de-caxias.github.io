@@ -59,7 +59,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "1bd5ca00a4130b2e9ad4"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "f4e8139dbca5676fd954"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotMainModule = true; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
@@ -725,23 +725,24 @@ function gallery () {
   var elementGallery = document.getElementsByClassName('gallery__images')[0];
   var minX = 0;
   var maxX = -(elementGallery.offsetWidth);
-
+  //console.log(maxX + 200);
   elementLeft.addEventListener('click', function (e){
-    if(this.minX >= 200) {
-      this.minX-=200;
-      console.log(this.minX);
-      //this.elementGallery.style.transform = "translateX("+this.minX+"px)"
+    if(minX > (maxX + 200)) {
+      minX -= 200;
+      console.log(minX);
+      elementGallery.style.transform = "translateX("+minX+"px)";
     } else {
-      this.minX = 0;
-      console.log(this.minX);
-      //this.elementGallery.style.transform = "translateX("+this.minX+"px)"
+      minX = 0;
+      console.log(minX);
+      elementGallery.style.transform = "translateX("+minX+"px)";
     }
   })
 
   elementRight.addEventListener('click', function (e){
-    this.minX-= 200;
-    console.log(this.minX);
-    //this.elementGallery.style.transform = "translateX("+this.minX+"px)"
+    if(minX )
+    minX -= 200;
+    console.log(minX);
+    elementGallery.style.transform = "translateX("+minX+"px)";
   })
 
 }

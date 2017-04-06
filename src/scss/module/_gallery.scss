@@ -15,11 +15,13 @@
   .control__left {
     left: 10%;
     position: absolute;
+    z-index: 9999;
   }
 
   .control__right {
     position: absolute;
     right: 10%;
+    z-index: 9999;
   }
 }
 .gallery__images {
