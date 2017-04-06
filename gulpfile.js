@@ -6,7 +6,7 @@ var postcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer')
 var imagemin = require('gulp-imagemin');
 
-gulp.task('default', ['sass:watch',  'minimg'])
+gulp.task('default', ['sass:watch', 'minimg'])
 
 gulp.task('sass', function () {
   return gulp.src('./src/scss/**/*.scss')
@@ -18,7 +18,7 @@ gulp.task('sass', function () {
 });
 
 gulp.task('sass:watch', function () {
-  gulp.watch('./src/scss/**/*.scss', ['sass']);
+  return gulp.watch('./src/scss/**/*.scss', ['sass']);
 });
 
 gulp.task('minimg', function () {
@@ -26,3 +26,6 @@ gulp.task('minimg', function () {
         .pipe(imagemin())
         .pipe(gulp.dest('./public/img'))
 });
+gulp.task('minimg:watch', function () {
+  return gulp.watch('./src/img/*', ['minimg']);
+})

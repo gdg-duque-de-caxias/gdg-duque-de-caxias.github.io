@@ -1,0 +1,63 @@
+.sobre {
+    display: block;
+    padding: 14% 12%;
+    position: relative;
+
+    h2 {
+        color: #656464;
+        font-weight: 300;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    span {
+        font-weight: 600;
+    }
+
+    .gblue {
+        color: #577ec0;
+    }
+
+    .gred {
+        color: #da473b;
+    }
+
+    .gyellow {
+        color: #dcad2c;
+    }
+
+    .ggreen {
+        color: #0f9c56;
+    }
+
+    em {
+        color: #da473b;
+        font-style: normal;
+    }
+
+    strong {
+        color: #555555;
+        font-weight: 400;
+    }
+}
+
+.sobre-box {
+    margin: 8% -2% 0% -2%;
+    display: flex;
+
+    .box {
+        padding: 0% 2%;;
+        width: 33%;
+        text-align: center;
+    }
+
+    h3 {
+        margin: 10px 0px 5px 0px;
+        font-size: 17px;
+    }
+
+    p {
+        color: #656464;
+        font-size: 13px;
+    }
+}

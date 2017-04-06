@@ -1,41 +1,35 @@
 /* HEADER BOX --------------------------------------- */
 
 @media screen and (min-width: 999px) {
-    #header-box{
+    .header-box{
         width: 325px;
         margin-top: -250px;
         float: right;
         margin-right: 50px;
-    }
-
-    #header-box h1 {
-        font-size: 50px;
-    }
-
-    #header-box h2 {
-        font-size: 20px;
-    }
-
-    #header-box h3 {
-        font-size: 20px;
+        h1 {
+            font-size: 50px;
+        }
+        h2 {
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 20px;
+        }
     }
 }
 
 @media screen and (max-width: 999px) {
-    #header-box{
+    .header-box{
         margin-top: -1%;
-    }
-
-    #header-box h1 {
-        font-size: 40px;
-    }
-
-    #header-box h2 {
-        font-size: 17px;
-    }
-
-    #header-box h3 {
-        font-size: 17px;
+        h1 {
+            font-size: 40px;
+        }
+        h2 {
+            font-size: 17px;
+        }
+        h3 {
+           font-size: 17px;
+       }
     }
 }
 
@@ -100,10 +94,8 @@
     }
 }
 
-/* SOBRE -------------------------------------------- */
-
 @media screen and (max-width: 999px) {
-    #sobre h2 {
+    .sobre h2 {
         font-size: 25px;
     }
 }
@@ -111,27 +103,27 @@
 /* SOBRE BOX ---------------------------------------- */
 
 @media screen and (max-width: 999px) {
-    #sobre-box {
-        display: grid;        
-    }
+    .sobre-box {
+        display: grid;
 
-    #sobre-box .sobre-box {        
-        width: 100%;
-        margin-bottom: 30px;
+        .box {
+            width: 100%;
+            margin-bottom: 30px;
+        }
     }
 }
 
 /* FOOTER ------------------------------------------- */
 
 @media screen and (max-width: 999px) {
-    #footer {
+    .footer {
         display: block;
         padding: 0em;
-    } 
 
-    #footer .contact-form, #footer .social-media {
-        text-align: center;
-        padding: 50px;
-        width: 100%;
-    } 
+        .contact-form, .social-media {
+            text-align: center;
+            padding: 50px;
+            width: 100%;
+        }
+    }
 }

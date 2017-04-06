@@ -1,17 +1,25 @@
 .footer {
+  overflow:auto;
+  padding: 70px;
   width: 100%;
   background-color: $gray;
 
   .contact-form {
     padding: 1em 2em;
     flex-grow: 1;
+    float: left;
+    padding: 0px 30px;
+    width: 50%;
   }
-
+  .social-media {
+    float: left;
+    padding: 0px 30px;
+    width: 50%;
+  }
   .subtitle {
     font-size: 2em;
     margin-bottom: 1em;
   }
-
   .control {
     position: relative;
     margin: 2em 0;
@@ -20,6 +28,7 @@
     .label {
       position: absolute;
       top: 1em;
+      left:0;
       transition: all .4s ease;
 
       &.is-active {
@@ -28,7 +37,6 @@
         font-size: .8em;
       }
     }
-
     .input {
       width: 100%;
       padding: .6em 0em;
@@ -38,7 +46,6 @@
       outline: none;
       transition: all .4s ease-in;
       font-size: 1em;
-
         &.has-focus {
           border-bottom: 2px solid $blue;
         }
@@ -66,10 +73,8 @@
       }
   }
 }
-
-@media screen and (max-width: 480px) {
-  .footer {
-    display: block;
-    padding: 0em;
-  }
+.border {
+    border-top: 5px solid transparent;
+    border-image: linear-gradient(to right, #577ec0 0%, #da473b 33%, #f7c53b 66%, #0f9c56 100%);
+    border-image-slice: 1;
 }

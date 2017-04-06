@@ -4,6 +4,10 @@
   "description": "Google Developers Group Duque de Caxias - Web Site",
   "main": "index.js",
   "scripts": {
+    "compile-js": "webpack",
+    "compile-assets": "gulp",
+    "livereload": "webpack-dev-server --progress --colors",
+    "dev": "concurrently --kill-others \"npm run livereload\" \"npm run compile-assets\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,16 +28,18 @@
   },
   "homepage": "https://github.com/GDGDuqueDeCaxias/gdgduquedecaxias.github.io#readme",
   "devDependencies": {
-    "angular": "^1.6.2",
     "autoprefixer": "^6.7.3",
     "babel": "^6.5.2",
+    "concurrently": "^3.4.0",
     "gulp": "^3.9.1",
     "gulp-imagemin": "^3.1.1",
     "gulp-postcss": "^6.3.0",
     "gulp-sass": "^3.1.0",
-    "webpack": "^2.2.1"
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.2"
   },
   "dependencies": {
+    "angular": "^1.6.4",
     "normalize.css": "^5.0.0"
   }
 }
