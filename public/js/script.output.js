@@ -59,7 +59,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "f4e8139dbca5676fd954"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "3ee70cfeccb0ffa6ee75"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotMainModule = true; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
@@ -718,37 +718,40 @@ $(document).ready(function () {
     $("body").on("click", ".nav-toggle", function () {
         $(".nav-menu").slideToggle();
     });
+    gallery();
 });
 function gallery () {
   var elementLeft = document.getElementsByClassName('control__left')[0];
   var elementRight = document.getElementsByClassName('control__right')[0];
   var elementGallery = document.getElementsByClassName('gallery__images')[0];
+  var imagesGallery = document.getElementsByClassName('gallery__image');
   var minX = 0;
-  var maxX = -(elementGallery.offsetWidth);
-  //console.log(maxX + 200);
+  var maxX = -3967;
+  Array.prototype.forEach.call(imagesGallery, function (image){
+    let rect = image.getBoundingClientRect();
+    console.log(rect.left)
+  })
   elementLeft.addEventListener('click', function (e){
-    if(minX > (maxX + 200)) {
-      minX -= 200;
-      console.log(minX);
+      if(minX >= -200){
+        minX = 0;
+      }else {
+        minX += 200;
+      }
       elementGallery.style.transform = "translateX("+minX+"px)";
-    } else {
-      minX = 0;
-      console.log(minX);
-      elementGallery.style.transform = "translateX("+minX+"px)";
-    }
   })
 
   elementRight.addEventListener('click', function (e){
-    if(minX )
-    minX -= 200;
-    console.log(minX);
+    if( minX >= (maxX+200)) {
+      minX -= 200;
+    } else {
+      minX = maxX;
+    }
     elementGallery.style.transform = "translateX("+minX+"px)";
   })
 
 }
 
 (function (){
-    gallery();
     var inputs = document.getElementsByClassName('input')
     Array.prototype.forEach.call(inputs, function (item) {
      item.addEventListener('focus', function () {
