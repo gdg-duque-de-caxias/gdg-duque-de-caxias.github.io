@@ -29,12 +29,14 @@
       position: absolute;
       top: 1em;
       left:0;
+      font-size: 14px;
       transition: all .4s ease;
 
       &.is-active {
         top: -1em;
         color: $blue;
         font-size: .8em;
+        font-size: 12px;
       }
     }
     .input {
@@ -73,6 +75,7 @@
       }
   }
 }
+
 .border {
     border-top: 5px solid transparent;
     border-image: linear-gradient(to right, #577ec0 0%, #da473b 33%, #f7c53b 66%, #0f9c56 100%);

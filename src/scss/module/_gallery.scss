@@ -5,6 +5,7 @@
   position: relative;
   width: 100%;
 }
+
 .gallery__controls {
   display: block;
   height: auto;
@@ -30,6 +31,7 @@
     z-index: 9999;
   }
 }
+
 .gallery__images {
   display: flex;
   flex-flow: row nowrap;
@@ -37,16 +39,19 @@
   transition: transform .5s ease-in-out;
   width: auto;
 }
+
 .gallery__image {
   position: relative;
   height: 100%;
   width: auto;
 }
+
 .gallery__skin {
   position: absolute;
   height: 300px;
   width: 99vw;
 }
+
 .gallery::-webkit-scrollbar {
     display: none;
 }

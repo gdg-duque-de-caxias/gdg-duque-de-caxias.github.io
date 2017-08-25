@@ -22,7 +22,8 @@ body {
 header {
   width: 100%;
   height: auto;
-  background-color: #E0E0E0; }
+  background-color: #E0E0E0;
+  margin-top: 52px; }
 
 .menu {
   width: 100%;
@@ -30,7 +31,8 @@ header {
   background-color: #E0E0E0;
   border-bottom: 2px solid #c4c4c4;
   position: fixed;
-  z-index: 1; }
+  z-index: 1;
+  margin-top: -52px; }
 
 nav {
   display: -webkit-box;
@@ -294,12 +296,14 @@ nav > ul > li > a:hover {
       position: absolute;
       top: 1em;
       left: 0;
+      font-size: 14px;
       -webkit-transition: all .4s ease;
       transition: all .4s ease; }
       .footer .control .label.is-active {
         top: -1em;
         color: #577EC0;
-        font-size: .8em; }
+        font-size: .8em;
+        font-size: 12px; }
     .footer .control .input {
       width: 100%;
       padding: .6em 0em;
@@ -338,7 +342,7 @@ nav > ul > li > a:hover {
 @media screen and (min-width: 999px) {
   .header-box {
     width: 325px;
-    margin-top: -250px;
+    margin-top: -220px;
     float: right;
     margin-right: 50px; }
     .header-box h1 {
@@ -410,7 +414,8 @@ nav > ul > li > a:hover {
     display: grid; }
     .sobre-box .box {
       width: 100%;
-      margin-bottom: 30px; } }
+      margin-bottom: 30px;
+      margin-top: 50px; } }
 
 /* FOOTER ------------------------------------------- */
 @media screen and (max-width: 999px) {
